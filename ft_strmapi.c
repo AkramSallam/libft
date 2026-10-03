@@ -3,7 +3,7 @@
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {
 	char	*str;
-	int	i;
+	unsigned int	i;
 
 	str = malloc(ft_strlen(s) + 1);
 	if (str == NULL)

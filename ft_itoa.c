@@ -32,20 +32,18 @@ char	*ft_itoa(int n)
 	result = malloc(len + 1);
 	if (result == NULL)
 		return (NULL);
-	if (n == 0)
-		result[0] = '0';
+	i = len;
+	result[i--] = '\0';
 	if (n < 0)
-	{
-		result[0] = '-';
 		n = -n;
-	}
-	i = len - 1;
 	while (n != 0)
 	{
-		result[i] = (n % 10) + '0';
+		result[i--] = (n % 10) + '0';
 		n /= 10;
-		i--;
 	}
-	result[len] = '\0';
+	if (i == 0)
+		result[i] = '0';
+	else if (i == -1)
+		result[0] = '-';
 	return (result);
 }

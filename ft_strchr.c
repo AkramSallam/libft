@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                       :::      ::::::::    */
-/*   ft_strchr.c                                       :+:      :+:    :+:    */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                   +:+ +:+         +:+      */
 /*   By: asallam <asallam@student.42amman.com>     #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/06 12:38:50 by asallam          #+#    #+#              */
-/*   Updated: 2026/10/06 17:58:55 by asallam         ###   ########.fr        */
+/*   Updated: 2026/10/06 19:13:15 by asallam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,10 +20,10 @@ char	*ft_strchr(const char *s, int c)
 	while (*s)
 	{
 		if (*s == val)
-			return (char *)(s);
+			return ((char *)(s));
 		s++;
 	}
 	if (*s == val)
-		return (char *)(s);
+		return ((char *)(s));
 	return (NULL);
 }

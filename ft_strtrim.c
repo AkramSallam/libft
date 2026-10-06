@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                       :::      ::::::::    */
-/*   ft_strtrim.c                                      :+:      :+:    :+:    */
+/*   ft_strtrim.c                                       :+:      :+:    :+:   */
 /*                                                   +:+ +:+         +:+      */
 /*   By: asallam <asallam@student.42amman.com>     #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/06 13:11:02 by asallam          #+#    #+#              */
-/*   Updated: 2026/10/06 18:18:56 by asallam         ###   ########.fr        */
+/*   Updated: 2026/10/06 19:14:04 by asallam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static int	check(char c, const char *set)
 	i = 0;
 	while (set[i])
 		if (set[i++] == c)
-		return (1);
+			return (1);
 	return (0);
 }
 
@@ -47,5 +47,5 @@ char	*ft_strtrim(char const *s1, char const *set)
 		i++;
 	}
 	str[i] = '\0';
-	return (char *)(str);
+	return ((char *)(str));
 }

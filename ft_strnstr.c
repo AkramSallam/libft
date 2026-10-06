@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                       :::      ::::::::    */
-/*   ft_strnstr.c                                      :+:      :+:    :+:    */
+/*   ft_strnstr.c                                       :+:      :+:    :+:   */
 /*                                                   +:+ +:+         +:+      */
 /*   By: asallam <asallam@student.42amman.com>     #+#  +:+       +#+         */
 /*                                               +#+#+#+#+#+   +#+            */
 /*   Created: 2026/10/06 12:38:58 by asallam          #+#    #+#              */
-/*   Updated: 2026/10/06 18:17:24 by asallam         ###   ########.fr        */
+/*   Updated: 2026/10/06 19:14:38 by asallam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 	unsigned long	nlen;
 
 	if (*needle == '\0')
-		return (char *)(haystack);
+		return ((char *)(haystack));
 	nlen = 0;
 	while (needle[nlen])
 		nlen++;
@@ -32,7 +32,7 @@ char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 			while (i + j < len && needle[j] && haystack[i + j] == needle[j])
 				j++;
 			if (j == nlen)
-				return (char *)(haystack + i);
+				return ((char *)(haystack + i));
 		}
 		i++;
 	}

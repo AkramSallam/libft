@@ -1,3 +1,15 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                       :::      ::::::::    */
+/*   ft_strchr.c                                       :+:      :+:    :+:    */
+/*                                                   +:+ +:+         +:+      */
+/*   By: asallam <asallam@student.42amman.com>     #+#  +:+       +#+         */
+/*                                               +#+#+#+#+#+   +#+            */
+/*   Created: 2026/10/06 12:38:50 by asallam          #+#    #+#              */
+/*   Updated: 2026/10/06 17:58:55 by asallam         ###   ########.fr        */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strchr(const char *s, int c)
@@ -7,11 +19,11 @@ char	*ft_strchr(const char *s, int c)
 	val = c;
 	while (*s)
 	{
-		if(*s == val)
-			return (s);
+		if (*s == val)
+			return (char *)(s);
 		s++;
 	}
 	if (*s == val)
-		return (s);
+		return (char *)(s);
 	return (NULL);
 }

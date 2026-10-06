@@ -1,6 +1,17 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_split.c                                         :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: asallam <marvin@42.fr>                     +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/10/06 12:37:03 by asallam           #+#    #+#             */
+/*   Updated: 2026/10/06 12:51:27 by asallam          ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
 #include "libft.h"
 
-static int wordcnt(char const *s, char c)
+static int	wordcnt(char const *s, char c)
 {
 	int	count;
 	int	in_word;
@@ -67,7 +78,7 @@ static int	fill(char **result, char const *s, char c)
 
 char	**ft_split(char const *s, char c)
 {
-	int	words;
+	int		words;
 	char	**result;
 
 	if (s == NULL)

@@ -37,12 +37,19 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 }
 /*
 #include <stdio.h>
-
 int main()
 {
-	char s[] = "123456";
-	ft_memmove(s+2, s, 4);
+	char s[] = "hello world";
+	ft_memmove(s + 2, s, 5);
 	printf("%s\n", s);
-	return 0;
+
+	int	arr[] = {1, 2, 3, 4, 5, 0, 0, 0, 0, 0};
+	int	i;
+
+	ft_memmove(arr + 5, arr, 5 * sizeof(int));
+
+	for (i = 0; i < 10; i++)
+		printf("%d ", arr[i]);
+	printf("\n");
 }
 */

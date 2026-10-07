@@ -19,3 +19,15 @@ int	ft_isalnum(int c)
 	else
 		return (0);
 }
+/*
+#include <stdio.h>
+
+int main()
+{
+	printf("%d\n", ft_isalnum('8')); // 1
+	printf("%d\n", ft_isalnum('f')); // 1
+	printf("%d\n", ft_isalnum('$')); // 0
+					 
+	return 0;
+}
+*/

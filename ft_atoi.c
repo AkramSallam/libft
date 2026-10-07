@@ -30,7 +30,17 @@ int	ft_atoi(const char *nptr)
 			sign = -sign;
 		i++;
 	}
-	while (nptr[i] >= '0' && nptr[i] <= '9' && nptr[i])
+	while (nptr[i] && ft_isdigit(nptr[i]))
 		ans = (ans * 10) + (nptr[i++] - '0');
 	return (ans * sign);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	char s[] = "-123";
+	printf("%d\n", ft_atoi(s));
+
+	return 0;
+}
+*/

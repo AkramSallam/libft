@@ -19,3 +19,12 @@ int	ft_tolower(int c)
 	else
 		return (c);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	printf("%c\n", ft_tolower('A'));
+
+	return 0;
+}
+*/

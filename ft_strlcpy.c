@@ -29,3 +29,15 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 	dst[i] = '\0';
 	return (len);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	char src[] = "hello";
+	char dest[6];
+	ft_strlcpy(dest, src, 6);
+	printf("%s\n", dest);
+
+	return 0;
+}
+*/

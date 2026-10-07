@@ -38,3 +38,15 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	dst[j] = '\0';
 	return (dstlen + srclen);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	char dest[20] = "hello ";
+	char src[] = "World";
+	ft_strlcat(dest, src, 20);
+	printf("%s\n", dest);
+
+	return 0;
+}
+*/

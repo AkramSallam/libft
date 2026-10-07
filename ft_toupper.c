@@ -19,3 +19,12 @@ int	ft_toupper(int c)
 	else
 		return (c);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	printf("%c\n", (char)ft_toupper('a'));
+
+	return 0;
+}
+*/

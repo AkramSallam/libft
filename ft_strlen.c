@@ -21,3 +21,13 @@ size_t	ft_strlen(const char *s)
 		len++;
 	return (len);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	char *s = "akramsallam";
+	printf("%zu\n", ft_strlen(s)); // 11
+				      
+	return 0;
+}
+*/

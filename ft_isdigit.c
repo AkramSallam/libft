@@ -19,3 +19,13 @@ int	ft_isdigit(int c)
 	else
 		return (0);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	printf("%d\n", ft_isdigit('5')); // 1
+	printf("%d\n", ft_isdigit('g')); // 0
+	
+	return 0;
+}
+*/

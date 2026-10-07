@@ -27,3 +27,14 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)(s));
 	return (NULL);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	char s[] = "akram sallam";
+	char *c = ft_strchr(s, 'm');
+	printf("%s\n", c);
+
+	return 0;
+}
+*/

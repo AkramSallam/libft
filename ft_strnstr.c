@@ -38,3 +38,14 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	}
 	return (NULL);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	char s1[] = "akram sallam";
+	char s2[] = "sallam";
+	printf("%s\n", (char *)ft_strnstr(s1, s2, 12));
+
+	return 0;
+}
+*/

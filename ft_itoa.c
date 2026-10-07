@@ -6,7 +6,7 @@
 /*   By: asallam <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/10/06 14:16:38 by asallam           #+#    #+#             */
-/*   Updated: 2026/10/06 14:16:43 by asallam          ###   ########.fr       */
+/*   Updated: 2026/10/07 13:28:28 by asallam          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ static int	get_digits(int n)
 char	*ft_itoa(int n)
 {
 	int		len;
-	int		i;
 	char	*result;
 
 	if (n == -2147483648)
@@ -44,18 +43,28 @@ char	*ft_itoa(int n)
 	result = malloc(len + 1);
 	if (result == NULL)
 		return (NULL);
-	i = len;
-	result[i--] = '\0';
+	result[len] = '\0';
+	if (n == 0)
+		result[0] = '0';
 	if (n < 0)
+	{
 		n = -n;
+		result[0] = '-';
+	}
+	len--;
 	while (n != 0)
 	{
-		result[i--] = (n % 10) + '0';
+		result[len--] = (n % 10) + '0';
 		n /= 10;
 	}
-	if (i == 0)
-		result[i] = '0';
-	else if (i == -1)
-		result[0] = '-';
 	return (result);
 }
+/*
+#include <limits.h>
+
+int main()
+{
+	char *s = ft_itoa(0);
+	printf("%s", s);
+}
+*/

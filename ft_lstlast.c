@@ -19,3 +19,18 @@ t_list	*ft_lstlast(t_list *lst)
 		lst = lst->next;
 	return (lst);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	t_list *root = ft_lstnew("node 1");
+	root->next = ft_lstnew("node 2");
+
+	t_list *lastnode = ft_lstlast(root);
+	printf("%s\n", (char *)lastnode->content);
+
+	free(root->next);
+	free(root);
+	return 0;
+}
+*/

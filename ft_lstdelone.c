@@ -18,3 +18,16 @@ void	ft_lstdelone(t_list *lst, void (*del)(void*))
 	del(lst->content);
 	free(lst);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	char *content = ft_strdup("hello");
+	t_list *node = ft_lstnew(content);
+
+	printf("Before deletion: %s\n", (char *)node->content);
+	ft_lstdelone(node, del_content);
+	printf("Node deleted successfully.\n");
+	return (0);
+}
+*/

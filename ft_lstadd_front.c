@@ -20,14 +20,18 @@ void	ft_lstadd_front(t_list **lst, t_list *new)
 	*lst = new;
 }
 /*
+#include <stdio.h>
 int main()
 {
-	t_list *head = NULL;
-	t_list *new_node = ft_lstnew("Hello, World!");
-	ft_lstadd_front(&head, new_node);
-	printf("%s\n", head->content);
+	t_list *root = ft_lstnew("node 1");
+	t_list *newnode = ft_lstnew("node 2");
+	ft_lstadd_front(&root, newnode);
 
-	free(new_node);
+	printf("%s ", (char *)root->content);
+	printf("%s\n", (char *)root->next->content);
+
+	free(root->next);
+	free(root);
 	return 0;
 }
 */

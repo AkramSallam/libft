@@ -27,3 +27,26 @@ void	ft_lstadd_back(t_list **lst, t_list *new)
 		temp = temp->next;
 	temp->next = new;
 }
+/*
+#include <stdio.h>
+int main()
+{
+	t_list	*root;
+	t_list	*newnode;
+
+	root = ft_lstnew("node 1");
+	root->next = ft_lstnew("node 2");
+	newnode = ft_lstnew("node 3");
+
+	ft_lstadd_back(&root, newnode);
+
+	printf("%s\n", (char *)root->content);
+	printf("%s\n", (char *)root->next->content);
+	printf("%s\n", (char *)root->next->next->content);
+
+	free(root->next->next);
+	free(root->next);
+	free(root);
+	return (0);
+}
+*/

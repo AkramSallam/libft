@@ -24,16 +24,18 @@ unsigned int	ft_lstsize(t_list *lst)
 	return (sz);
 }
 /*
+#include <stdio.h>
 int main()
 {
-	t_list *root;
-	root->content = "root node";
-	root->next = malloc(sizeof(t_list));
-	root->next->content = "second node";
-	root->next->next = NULL;
-	int sz = ft_lstsize(root);
-	printf("Size of the linked list: %d\n", sz);
+	t_list *root = ft_lstnew("node 1");
+	root->next = ft_lstnew("node 2");
+	root->next->next = ft_lstnew("node 3");
 
+	unsigned int x = ft_lstsize(root);
+	printf("%d\n", x);
+
+
+	free(root->next->next);
 	free(root->next);
 	free(root);
 	return 0;

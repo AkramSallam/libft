@@ -49,3 +49,15 @@ char	*ft_strtrim(char const *s1, char const *set)
 	str[i] = '\0';
 	return ((char *)(str));
 }
+/*
+#include <stdio.h>
+int main()
+{
+	char s[] = "    hello world     ";
+	char *str = ft_strtrim(s, " ");
+	printf("%s\n", str);
+
+	free(str);
+	return 0;
+}
+*/

@@ -60,11 +60,23 @@ char	*ft_itoa(int n)
 	return (result);
 }
 /*
-#include <limits.h>
+#include <stdio.h>
 
 int main()
 {
-	char *s = ft_itoa(0);
-	printf("%s", s);
+	char *s1 = ft_itoa(0);
+	char *s2 = ft_itoa(1234);
+	char *s3 = ft_itoa(-1234);
+	char *s4 = ft_itoa(-2147483648);
+	printf("%s\n", s1);
+	printf("%s\n", s2);
+	printf("%s\n", s3);
+	printf("%s\n", s4);
+
+	free(s1);
+	free(s2);
+	free(s3);
+	free(s4);
+	return 0;
 }
 */

@@ -40,3 +40,16 @@ char	*ft_strjoin(char const *s1, char const *s2)
 	str[i] = '\0';
 	return (str);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	char s1[] = "akram ";
+	char s2[] = "sallam";
+	char *str = ft_strjoin(s1, s2);
+	printf("%s\n", str);
+
+	free(str);
+	return 0;
+}
+*/

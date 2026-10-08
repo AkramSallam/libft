@@ -34,3 +34,12 @@ void	ft_putnbr_fd(int n, int fd)
 		div /= 10;
 	}
 }
+/*
+#include <stdio.h>
+int main()
+{
+	ft_putnbr_fd(1234, 1);
+
+	return 0;
+}
+*/

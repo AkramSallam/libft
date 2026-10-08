@@ -29,3 +29,16 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	str[i] = '\0';
 	return (str);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	char *result = ft_strmapi("akram", f);
+	if (result == NULL)
+		return 1;
+	printf("%s\n", result);
+
+	free(result);
+	return 0;
+}
+*/

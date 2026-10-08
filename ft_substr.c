@@ -34,3 +34,15 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	substr[i] = '\0';
 	return (substr);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	char str[] = "akram sallam";
+	char *s = ft_substr(str, 6, 7);
+	printf("%s\n", s);
+	
+	free(s);
+	return 0;
+}
+*/

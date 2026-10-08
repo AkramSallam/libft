@@ -91,3 +91,26 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (result);
 }
+/*
+#include <stdio.h>
+int main()
+{
+	char **result = ft_split("hello world this is akram", ' ');
+	if (result == NULL)
+		return (1);
+	int i = 0;
+	while (result[i] != NULL)
+		printf("%s ", result[i++]);
+	printf("\n");
+
+	i = 0;
+	while (result[i] != NULL)
+	{
+		free(result[i]);
+		i++;
+	}
+	free(result);
+
+	return 0;
+}
+*/

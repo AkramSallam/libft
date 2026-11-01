@@ -118,18 +118,6 @@ Compile your program together with the library:
     cc main.c libft.a
 
 
-## AI Usage
-
-AI tools were used as a learning and development aid during this project.
-
-They were mainly used to:
-- Clarify C programming concepts such as pointers, memory management, `size_t`, and dynamic allocation.
-- Explain the behavior and edge cases of standard C library functions.
-- Review implementations and identify potential edge cases.
-- Assist with testing strategies and comparing the custom implementations with their standard library counterparts.
-
-AI was used as a supplementary learning tool. The implementation and final code were written, tested, and reviewed as part of the project's development process.
-
 # Technical Concepts
 
 This project provided practical experience with:

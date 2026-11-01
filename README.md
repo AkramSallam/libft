@@ -1,5 +1,3 @@
-*This project has been created as part of the 42 curriculum by asallam.*
-
 # Description
 
 Libft is a custom C library developed as part of the 42 curriculum.
